@@ -1,5 +1,5 @@
 <script>
-  export let name;
+  //   export let name;
 </script>
 
 <style>
@@ -21,24 +21,43 @@
   }
 
   :global(body) {
+    margin: 0;
+    padding: 0;
     background-color: var(--dark-blue);
     color: var(--light-gray);
   }
   main {
+    display: grid;
+    width: 100%;
     text-align: center;
-    padding: 1em;
-    max-width: 240px;
     margin: 0 auto;
-  }
-  a {
-    color: var(--intense-purple);
+    grid-template-areas:
+      "nav nav nav"
+      "header header header"
+      "section section section"
+      "footer footer footer";
   }
 
-  h1 {
-    color: var(--intense-coral);
-    text-transform: uppercase;
-    font-size: 4em;
-    font-weight: 100;
+  nav {
+    height: 100px;
+    background-color: var(--dark-blue);
+    grid-area: nav;
+  }
+
+  header {
+    height: 600px;
+    background-color: var(--medium-blue);
+    grid-area: header;
+  }
+  section {
+    height: 600px;
+    background-color: var(--medium-blue);
+    grid-area: section;
+  }
+  footer {
+    height: 100px;
+    background-color: var(--dark-blue);
+    grid-area: footer;
   }
 
   @media (min-width: 640px) {
@@ -49,10 +68,9 @@
 </style>
 
 <main>
-  <h1>Hello {name}!</h1>
-  <p>
-    Visit the
-    <a href="https://svelte.dev/tutorial">Svelte tutorial</a>
-    to learn how to build Svelte apps.
-  </p>
+
+  <nav>Aquí irá el Navbar</nav>
+  <header>Aquí irá el header</header>
+  <section>Aquí irá el section</section>
+  <footer>Aquí irá el footer</footer>
 </main>
