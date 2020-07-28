@@ -12,7 +12,9 @@ const App = () => {
   return (
     <div className="App">
       <Header titleHeader="SisifoDev" />
-      <Navegation background="bg-primary" titleNav="Esto es un Menu de Navegacion" />
+      <Navegation
+        titleNav="Esto es un Menu de Navegacion"
+      />
     </div>
   );
 }
