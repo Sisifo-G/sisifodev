@@ -5,8 +5,6 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-import './resources/js/typingEffect.js';
-
 ReactDOM.render(
   <React.StrictMode>
     <App />
