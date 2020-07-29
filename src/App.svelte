@@ -36,7 +36,7 @@
   main {
     display: grid;
     width: 100%;
-    text-align: center;
+    /* text-align: center; */
     margin: 0 auto;
     grid-template-areas:
       "nav nav nav"
