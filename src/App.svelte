@@ -4,8 +4,9 @@
   import Portfolio from "./components/Portfolio.svelte";
   import Contacts from "./components/Contacts.svelte";
   import Footer from "./components/Footer.svelte";
-  //   export let name;
-  export let svelteLogo = "https://arepa.s3.amazonaws.com/svelte-logo.png";
+  import Header from "./components/Header.svelte";
+
+  let src = "./assets/img/sisifoLogo.png";
 </script>
 
 <style>
@@ -44,24 +45,10 @@
       "footer footer footer";
   }
 
-  main img {
-    width: 30%;
-  }
-
-  header {
-    height: 600px;
-
-    grid-area: header;
-  }
   section {
     height: 600px;
 
     grid-area: section;
-  }
-  footer {
-    height: 100px;
-
-    grid-area: footer;
   }
 
   @media (min-width: 640px) {
@@ -74,9 +61,7 @@
 <main>
 
   <Navbar />
-  <header id="header">
-    <img src={svelteLogo} alt="Svelte" />
-  </header>
+  <Header />
   <section id="services">
     <Services />
     <Portfolio />
