@@ -1,12 +1,16 @@
 <script>
-  import Icon from "fa-svelte";
-  import { faWarehouse } from "@fortawesome/free-solid-svg-icons/faWarehouse";
+  import Whatsapp from "svelte-material-icons/Whatsapp.svelte";
 
-  let icon = faWarehouse;
   let sisifoLogo = "https://i.ibb.co/VpxxSdK/sisifo-Logo.png";
   let rutaLogo =
     "https://www.htmlden.com/wp-content/themes/ks/img/web-developer-master-tn.svg";
   let imgFondo = "https://i.ibb.co/xCy1S18/path1.png";
+
+  export let size = "1em";
+  export let width = size;
+  export let height = size;
+  export let color = "currentColor";
+  export let viewBox = "0 0 24 24";
 </script>
 
 <style>
@@ -50,7 +54,7 @@
   }
 
   p.info {
-    background: var(--intense-green);
+    background: var(--intense-coral);
     border-radius: 25px;
     width: 150px;
     height: 50px;
@@ -60,6 +64,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  p.info:hover {
     cursor: pointer;
   }
 
@@ -100,8 +107,8 @@
         </p>
 
         <p class="info">
+          <Whatsapp {color} {size} {width} {height} {viewBox} />
           Contáctanos
-          <Icon class="" icon={faWarehouse} />
         </p>
 
       </div>
