@@ -1,5 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@400;500&display=swap');
 
-h1, h2, h3, h4, a, button {
+/* 
+    para el root
+    color svg: #425B83
+*/
+
+/*
+    estilos importantes que elimino por venir predeterminado del bostrtrap 4
+*/
+
+input:focus, .btn:focus, .btn.focus,
+button:focus, button, button:focus,
+.btn-primary:focus,
+.swal-button:focus,
+.btn-primary:not(:disabled):not(.disabled):active:focus,
+.btn-primary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-primary.dropdown-toggle:focus,
+.btn-info:not(:disabled):not(.disabled):active:focus,
+.btn-info:not(:disabled):not(.disabled).active:focus,
+.show > .btn-info.dropdown-toggle:focus,
+.btn-secondary:not(:disabled):not(.disabled):active:focus,
+.btn-secondary:not(:disabled):not(.disabled).active:focus,
+.show > .btn-secondary.dropdown-toggle:focus,
+.btn-success:not(:disabled):not(.disabled):active:focus,
+.btn-success:not(:disabled):not(.disabled).active:focus,
+.show > .btn-success.dropdown-toggle:focus,
+.btn-warning:not(:disabled):not(.disabled):active:focus,
+.btn-warning:not(:disabled):not(.disabled).active:focus,
+.show > .btn-warning.dropdown-toggle:focus,
+.btn-danger:not(:disabled):not(.disabled):active:focus,
+.btn-danger:not(:disabled):not(.disabled).active:focus,
+.show > .btn-danger.dropdown-toggle:focus,
+.btn-light:not(:disabled):not(.disabled):active:focus,
+.btn-light:not(:disabled):not(.disabled).active:focus,
+.show > .btn-light.dropdown-toggle:focus,
+.btn-dark:not(:disabled):not(.disabled):active:focus,
+.btn-dark:not(:disabled):not(.disabled).active:focus,
+.show > .btn-dark.dropdown-toggle:focus {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+h1, h2, h3, h4, h5, a, button, a, .fontTitle {
     font-family: 'Recursive', sans-serif;
+    text-decoration: none;
+}
+
+/* .navegation button, .titleLogo {
+    color: #fff;
+} */
+
+/* .navegation button:hover {
+    background-color: ;
+} */
+
+.titleLogo {
+    font-size: 2rem;
+    padding-left: 10px;
 }
