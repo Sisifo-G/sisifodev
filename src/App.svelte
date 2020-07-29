@@ -1,9 +1,15 @@
 <script>
+  import Navbar from "./components/Navbar.svelte";
+  import Services from "./components/Services.svelte";
+  import Portfolio from "./components/Portfolio.svelte";
+  import Contacts from "./components/Contacts.svelte";
+  import Footer from "./components/Footer.svelte";
   //   export let name;
+  export let svelteLogo = "https://arepa.s3.amazonaws.com/svelte-logo.png";
 </script>
 
 <style>
-  :root {
+  :global(:root) {
     --dark-blue: #121232;
     --medium-blue: #1c1e45;
     --light-blue: #32436f;
@@ -38,25 +44,23 @@
       "footer footer footer";
   }
 
-  nav {
-    height: 100px;
-    background-color: var(--dark-blue);
-    grid-area: nav;
+  main img {
+    width: 30%;
   }
 
   header {
     height: 600px;
-    background-color: var(--medium-blue);
+
     grid-area: header;
   }
   section {
     height: 600px;
-    background-color: var(--medium-blue);
+
     grid-area: section;
   }
   footer {
     height: 100px;
-    background-color: var(--dark-blue);
+
     grid-area: footer;
   }
 
@@ -69,8 +73,15 @@
 
 <main>
 
-  <nav>Aquí irá el Navbar</nav>
-  <header>Aquí irá el header</header>
-  <section>Aquí irá el section</section>
-  <footer>Aquí irá el footer</footer>
+  <Navbar />
+  <header id="header">
+    <img src={svelteLogo} alt="Svelte" />
+  </header>
+  <section id="services">
+    <Services />
+    <Portfolio />
+    <Contacts />
+  </section>
+  <Footer />
+
 </main>
