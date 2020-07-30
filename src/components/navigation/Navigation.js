@@ -32,17 +32,15 @@ class Navigation extends React.Component {
         console.log('Hola Mundo');
     }
 
-    handlerNavBar = (e, refButton) => {
+    handlerNavBar = () => {
         if (this.state.navbar) {
             $('.itemNavb').animate({
                 height: '0',
                 opacity: '0'
             }, 400);
-            // $('.itemNavb').css("display", "none");
 
             this.setState({ navbar: false })
         } else {
-            // console.log(e);
             $('.itemNavb').animate({
                 height: '200px',
                 opacity: '1'
@@ -68,7 +66,7 @@ class Navigation extends React.Component {
                     <nav className="navegation">
                         <button
                             ref={this.refButtonNav}
-                            onClick={(e) => { this.handlerNavBar(e, this.refButtonNav) }}
+                            onClick={() => { this.handlerNavBar() }}
                             className="ButtonIcon btn">
                             <i className="material-icons">dehaze</i>
                         </button>
