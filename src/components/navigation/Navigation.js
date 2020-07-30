@@ -1,5 +1,5 @@
 import React from 'react';
-// import $ from 'jquery';
+import $ from 'jquery';
 // import { findDOMNode } from 'react-dom';
 import './Navigation.css';
 
@@ -18,52 +18,86 @@ class Navigation extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            name: 'Juan'
+            name: 'Juan',
+            navbar: false
         }
+
+        this.refNavbar = React.createRef();
+        this.refButtonNav = React.createRef();
     }
 
+    // handler to test '<a href={}></a>'
     handleButtonLogo = e => {
-        // e.preventDefault();
+        e.preventDefault();
         console.log('Hola Mundo');
+    }
+
+    handlerNavBar = (e, refButton) => {
+        if (this.state.navbar) {
+            $('.itemNavb').animate({
+                height: '0',
+                opacity: '0'
+            }, 400);
+            // $('.itemNavb').css("display", "none");
+
+            this.setState({ navbar: false })
+        } else {
+            // console.log(e);
+            $('.itemNavb').animate({
+                height: '200px',
+                opacity: '1'
+            }, 400);
+            $('.itemNavb').css("display", "block");
+
+            this.setState({ navbar: true })
+        }
     }
 
     render() {
         return (
             <>
                 <div className="navbarComponent container d-flex justify-content-between border p-2">
-                    <div className="titleLogo d-flex align-items-center">
-                        <img src={logo} alt=""/>
+                    <div className="titleLogo">
+                        <img src={logo} alt="" />
                         <a
-                        href="#header"
-                        onClick={this.handleButtonLogo}>
+                            href="#header"
+                            onClick={this.handleButtonLogo}>
                             <span className="fontTitle">SisifoDev</span>
                         </a>
                     </div>
-                    <nav className="navegation d-flex align-items-center">
-                        <li>
-                            <button
-                                className="btn">
-                                Inicio
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                className="btn">
-                                Portafolio
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                className="btn">
-                                Social
-                            </button>
-                        </li>
-                        <li>
-                            <button
-                                className="btn">
-                                Contactenos
-                            </button>
-                        </li>
+                    <nav className="navegation">
+                        <button
+                            ref={this.refButtonNav}
+                            onClick={(e) => { this.handlerNavBar(e, this.refButtonNav) }}
+                            className="ButtonIcon btn">
+                            <i className="material-icons">dehaze</i>
+                        </button>
+                        <div className="itemNavb">
+                            <li>
+                                <button
+                                    className="btn">
+                                    Inicio
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    className="btn">
+                                    Portafolio
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    className="btn">
+                                    Social
+                                </button>
+                            </li>
+                            <li>
+                                <button
+                                    className="btn">
+                                    Contactenos
+                                </button>
+                            </li>
+                        </div>
                     </nav>
                 </div>
             </>

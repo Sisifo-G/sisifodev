@@ -13,7 +13,11 @@ class Seccion extends React.Component {
                 <div className="container border border-info">
                     <h4>Seccion</h4>
                     <Portafolio />
-                    <Profiles />
+                </div>
+                <div className="contentProfiles border">
+                    <div className="container border border-success">
+                        <Profiles />
+                    </div>
                 </div>
             </div>
         );

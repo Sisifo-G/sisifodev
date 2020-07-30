@@ -12,7 +12,7 @@ import Seccion from './components/seccion/Seccion';
 const App = () => {
   return (
     <div className="App">
-      <Header titleHeader="SisifoDev" />
+      <Header titleHeader="Sisifo" />
       <Navegation />
       <Seccion />
     </div>

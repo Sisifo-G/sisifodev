@@ -1,7 +1,13 @@
 .navbarComponent {
     position: relative;
+    background-color: #fff;
     margin-top: -40px;
     border-radius: 40px;
+}
+
+.titleLogo {
+    display: flex;
+    align-items: center;
 }
 
 .titleLogo img {
@@ -10,11 +16,25 @@
     margin-right: 10px;
 }
 
-.navegation li {
+.navegation {
+    display: flex;
+    align-items: center;
+}
+
+.ButtonIcon {
+    display: none;
+}
+
+.itemNavb {
+    display: flex;
+    align-items: center;
+}
+
+.itemNavb li {
     list-style: none;
 }
 
-.navegation li button {
+.navegation li button, .ButtonIcon {
     padding: 10px 15px;
     margin: 0 5px;
     transition: all 500ms ease;
@@ -23,7 +43,7 @@
     -webkit-transition: all 500ms ease;
 }
 
-.navegation li button:hover {
+.navegation li button:hover, .ButtonIcon:hover {
     background-color: #2C3E50;
     border-radius: 40px;
     color: #fff;
@@ -31,4 +51,49 @@
     -o-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
     -webkit-transition: all 500ms ease;
+}
+
+.ButtonIcon:hover {
+    border-radius: 60px;
+}
+
+/* responsitive Designe */
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 425px) {
+    .navbarComponent {
+        width: 95%;
+    }
+
+    .titleLogo {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .titleLogo img {
+        display: none;
+    }
+
+    .navegation {
+        flex-direction: column;
+        align-items: flex-end;
+        text-align: right;
+    }
+
+    .ButtonIcon {
+        display: flex;
+    }
+
+    .itemNavb {
+        display: none;
+    }
+
+    .itemNavb li button {
+        margin-top: 5px;
+    }
 }

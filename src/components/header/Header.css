@@ -14,20 +14,62 @@
   height: 90%;
 }
 
-.titleHeader {
+.styleContent {
   width: 100%;
-  height: 100%;
+  height: 700px;
   position: absolute;
-  clip-path: polygon(0% 0%, 30% 0%, 50% 50%, 40% 70%, 0% 100%);
+  clip-path: polygon(0% 0%, 30% 0%, 30% 100%, 0% 100%);
+  /* clip-path: polygon(0% 0%, 30% 0%, 50% 50%, 40% 70%, 0% 100%); */
   background-color: rgba(0, 0, 0, 0.6);
-  color: #fff;
+}
+
+.contentTitle {
+  width: 100%;
+  height: 90%;
 }
 
 .textTitle {
   position: relative;
-  width: 50%;
-  padding: 20px 20px 20px calc(30% - 50px);
-  border: 1px solid red;
+  width: 40%;
   border-left: none;
   /* Darle un box-shadow */
+}
+
+.titleCard {
+  width: 60%;
+  height: auto;
+  text-align: center;
+}
+
+.spanSisifo {
+  padding: 5px;
+  color: #fff;
+  border: 1px solid white;
+  border-right: none;
+}
+
+.spanDev {
+  color: #18bc9c;
+}
+
+/* responsitive Designe */
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 1024px) {}
+
+@media screen and (max-width: 768px) {
+  .titleCard {
+    width: 100%;
+  }
+
+  .spanSisifo {
+    border: none;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .styleContent {
+    clip-path: polygon(0% 0%, 40% 0%, 40% 100%, 0% 100%);
+  }
 }
