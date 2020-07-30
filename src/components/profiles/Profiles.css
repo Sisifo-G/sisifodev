@@ -2,3 +2,23 @@
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+.profiles h4 {
+    color: #fff;
+}
+
+/* imgContentProf  */
+
+.imgProfile {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.imgProfile img {
+    width: 150px;
+    background-color: #fff;
+    border-radius: 100%;
+    border-color: transparent;
+}

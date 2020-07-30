@@ -4,6 +4,10 @@ import './Profiles.css';
 // json developers
 import json from '../../resources/json/portafolio.json';
 
+// img.svg
+import imgPort from '../../resources/img/seccionIcons/nature.svg';
+
+
 const Profiles = () => {
     const profile = json.developers;
     return (
@@ -12,27 +16,32 @@ const Profiles = () => {
             <div className="contentProfiles row justify-content-around mr-0 ml-0">
                 {profile.map(profile => (
                     <div key={profile.id} className="col-md-5 col-sm-12 col-12">
-                        <div className="card pl-0 pr-0">
-                            <div className="card-header d-flex justify-content-between align-items-center">
-                                <h5 className="m-0">
-                                    {profile.name}
-                                </h5>
-                                <button
-                                    className="btn btn-outline-info">
-                                    edad: {profile.years === '' ? '?' : profile.years}
-                                </button>
+                        <div className="imgContentProf">
+                            <div className="imgProfile">
+                                <img src={imgPort} alt=""/>
                             </div>
-                            <div className="card-body">
-                                <ul>
-                                    <li>
-                                        Lenguaje preferencial: {profile.devOps}
-                                    </li>
-                                    {profile.socialWeb.map((social, i) => (
-                                        <li key={i}>
-                                            gitHub: {social.github}
+                            <div className="card pl-0 pr-0">
+                                <div className="card-header d-flex justify-content-between align-items-center">
+                                    <h5 className="m-0">
+                                        {profile.name}
+                                    </h5>
+                                    <button
+                                        className="btn btn-outline-info">
+                                        edad: {profile.years === '' ? '?' : profile.years}
+                                    </button>
+                                </div>
+                                <div className="card-body">
+                                    <ul>
+                                        <li>
+                                            Lenguaje preferencial: {profile.devOps}
                                         </li>
-                                    ))}
-                                </ul>
+                                        {profile.socialWeb.map((social, i) => (
+                                            <li key={i}>
+                                                gitHub: {social.github}
+                                            </li>
+                                        ))}
+                                    </ul>
+                                </div>
                             </div>
                         </div>
                     </div>

@@ -1,4 +1,21 @@
 .contentSeccion {
     padding-top: 40px;
-    padding-bottom: 40px;
+}
+
+/* contentPortafolio */
+
+/* contentProfiles */
+
+.contentSecProfiles {
+    padding-top: 20px;
+    background-color: rgba(66, 91, 131, .8);
+}
+
+.iconPortSeccion {
+    position: absolute;
+    right: 10px;
+}
+
+.iconPortSeccion img {
+    width: 600px;
 }
