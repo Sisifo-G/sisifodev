@@ -16,13 +16,22 @@
     background: var(--medium-blue);
     height: 100px;
     padding: 20px;
-    display: block;
-    align-items: center;
-    justify-content: space-around;
+    /* display: block; */
+    /* align-items: center; */
+    /* justify-content: space-around; */
     grid-area: footer;
+  }
+  .footer-nav {
+    justify-self: center;
+    align-self: center;
+  }
+  .copy {
+    justify-self: center;
+    align-self: center;
   }
   .footer-nav ul {
     display: inline;
+
     justify-content: space-around;
     list-style-type: none;
   }

@@ -5,6 +5,9 @@
   let rutaLogo =
     "https://www.htmlden.com/wp-content/themes/ks/img/web-developer-master-tn.svg";
   let imgFondo = "https://i.ibb.co/xCy1S18/path1.png";
+
+  export let nombre;
+  export let id;
 </script>
 
 <style>
@@ -31,7 +34,7 @@
   .text-container p {
     /* align-self: center; */
     /* justify-self: center; */
-    font-size: 2em;
+    font-size: 1.5em;
     max-width: 600px;
   }
 
@@ -79,9 +82,12 @@
       <div class="text">
         <h2>SisifoDev</h2>
         <p>
-          Expertos en desarrollo web con más de 5 años de experiencia en el
-          mercado, construyendo sitios personales, empresariales y tiendas
-          online.
+          Diseñamos sitios web administrables, modernos, de fácil navegación,
+          intuitivos y con altos estándares de calidad. Construímos tiendas en
+          línea, landing page, sitios personalizados, ofrecemos soporte técnico,
+          administración de contenidos, estrategias de comunicación y
+          posicionamiento SEO para aumentar el tráfico de visitantes hacia tu
+          sitio.
         </p>
 
         <!-- aquí va el btn -->
