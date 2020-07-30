@@ -6,8 +6,8 @@
     "https://www.htmlden.com/wp-content/themes/ks/img/web-developer-master-tn.svg";
   let imgFondo = "https://i.ibb.co/xCy1S18/path1.png";
 
-  export let nombre;
-  export let id;
+  // export let nombre;
+  // export let id;
 </script>
 
 <style>

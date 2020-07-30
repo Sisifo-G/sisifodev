@@ -1,5 +1,17 @@
 <script>
+  import Phone from "svelte-material-icons/Phone.svelte";
+  import Whatsapp from "svelte-material-icons/Whatsapp.svelte";
+  import Email from "svelte-material-icons/Email.svelte";
+  import Facebook from "svelte-material-icons/Facebook.svelte";
+  import Twitter from "svelte-material-icons/Twitter.svelte";
+  import Instagram from "svelte-material-icons/Instagram.svelte";
+  import Git from "svelte-material-icons/Git.svelte";
 
+  export let size = "1em";
+  export let width = size;
+  export let height = size;
+  export let color = "currentColor";
+  export let viewBox = "0 0 24 24";
 </script>
 
 <style>
@@ -14,31 +26,34 @@
   }
   .Footer {
     background: var(--medium-blue);
-    height: 100px;
-    padding: 20px;
+    /* height: 100px; */
+    padding: 20px 160px;
     /* display: block; */
     /* align-items: center; */
     /* justify-content: space-around; */
     grid-area: footer;
+    display: grid;
+    grid-template-areas:
+      "datos-contacto redes footer-nav"
+      "copy-area copy-area copy-area ";
   }
   .footer-nav {
-    justify-self: center;
-    align-self: center;
+    /* justify-self: center;
+    align-self: center; */
+    grid-area: footer-nav;
+    justify-self: end;
   }
-  .copy {
-    justify-self: center;
-    align-self: center;
-  }
-  .footer-nav ul {
-    display: inline;
 
-    justify-content: space-around;
+  .footer-nav ul {
+    display: block;
+
+    /* justify-content: space-around; */
     list-style-type: none;
   }
   .footer-nav li {
-    display: inline;
+    display: block;
 
-    text-align: center;
+    /* text-align: center; */
     margin: 0 10px 0 0;
   }
 
@@ -50,6 +65,42 @@
     color: var(--white-color);
     text-decoration: none;
     cursor: pointer;
+  }
+
+  .copy {
+    margin: 0;
+    padding: 0;
+    justify-self: center;
+    align-self: center;
+    grid-area: copy-area;
+  }
+
+  .copy p {
+    margin-bottom: 20px;
+  }
+
+  .datos-contacto {
+    grid-area: datos-contacto;
+    align-self: start;
+    justify-self: start;
+  }
+  .datos-contacto p {
+    margin: 0;
+    padding: 0;
+  }
+  .redes {
+    grid-area: redes;
+    align-self: start;
+    justify-self: center;
+  }
+
+  .telefono {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+  }
+  .dato-contacto {
+    margin-left: 5px;
   }
 </style>
 
@@ -63,12 +114,49 @@
         <a href="#services">Servicios</a>
       </li>
       <li>
-        <a href="">Portafolio</a>
+        <a href="">Proyectos</a>
+      </li>
+      <li>
+        <a href="">Blog</a>
       </li>
       <li>
         <a href="#footer">Contactos</a>
       </li>
     </ul>
+  </div>
+  <div class="datos-contacto">
+    <h3>¡Contactos!</h3>
+    <div class="telefono">
+      <div class="icono-contacto">
+        <Phone {color} {size} {width} {height} {viewBox} />
+      </div>
+      <div class="dato-contacto">
+        <p>+57 3178020140</p>
+      </div>
+    </div>
+    <div class="telefono">
+      <div class="icono-contacto">
+        <Whatsapp {color} {size} {width} {height} {viewBox} />
+      </div>
+      <div class="dato-contacto">
+        <p>+57 3185150250</p>
+      </div>
+    </div>
+    <div class="telefono">
+      <div class="icono-contacto">
+        <Email {color} {size} {width} {height} {viewBox} />
+      </div>
+      <div class="dato-contacto">
+        <p>contactos@sisifodev.com</p>
+      </div>
+    </div>
+  </div>
+  <div class="redes">
+    <h3>Sigunos en:</h3>
+    <Facebook {color} {size} {width} {height} {viewBox} />
+    <Twitter {color} {size} {width} {height} {viewBox} />
+    <Instagram {color} {size} {width} {height} {viewBox} />
+    <Git {color} {size} {width} {height} {viewBox} />
   </div>
   <div class="copy">
     <p>
