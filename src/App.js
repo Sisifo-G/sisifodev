@@ -5,6 +5,7 @@ import './App.css';
 import Header from './components/header/Header';
 import Navegation from './components/navigation/Navigation';
 import Seccion from './components/seccion/Seccion';
+import Footer from './components/footer/Footer';
 
 // Class Component => Mantenimiento
 // import TypeEffect from './components/typingEffect/TypingEffect';
@@ -15,6 +16,7 @@ const App = () => {
       <Header titleHeader="Sisifo" />
       <Navegation />
       <Seccion />
+      <Footer />
     </div>
   );
 }
