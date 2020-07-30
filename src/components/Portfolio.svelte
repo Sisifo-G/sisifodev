@@ -7,5 +7,5 @@
 </style>
 
 <div class="portfolio">
-  <h2>Portafolio</h2>
+  <h2>Proyectos Realizados</h2>
 </div>

@@ -1,16 +1,10 @@
 <script>
-  import Whatsapp from "svelte-material-icons/Whatsapp.svelte";
+  import BtnContactos from "./BtnContactos.svelte";
 
   let sisifoLogo = "https://i.ibb.co/VpxxSdK/sisifo-Logo.png";
   let rutaLogo =
     "https://www.htmlden.com/wp-content/themes/ks/img/web-developer-master-tn.svg";
   let imgFondo = "https://i.ibb.co/xCy1S18/path1.png";
-
-  export let size = "1em";
-  export let width = size;
-  export let height = size;
-  export let color = "currentColor";
-  export let viewBox = "0 0 24 24";
 </script>
 
 <style>
@@ -53,26 +47,10 @@
     position: absolute;
   }
 
-  p.info {
-    background: var(--intense-coral);
-    border-radius: 25px;
-    width: 150px;
-    height: 50px;
-    font-size: 1em;
-    font-weight: 700;
-    color: var(--white-color);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-
-  p.info:hover {
-    cursor: pointer;
-  }
-
   .img-fondo img {
     width: 500px;
     position: relative;
+    z-index: -1;
   }
 
   .opacity {
@@ -103,13 +81,11 @@
         <p>
           Expertos en desarrollo web con más de 5 años de experiencia en el
           mercado, construyendo sitios personales, empresariales y tiendas
-          online empresas.
+          online.
         </p>
 
-        <p class="info">
-          <Whatsapp {color} {size} {width} {height} {viewBox} />
-          Contáctanos
-        </p>
+        <!-- aquí va el btn -->
+        <BtnContactos />
 
       </div>
       <div class="img-fondo">

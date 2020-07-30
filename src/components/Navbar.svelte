@@ -1,9 +1,19 @@
 <script>
   // Lógica del componente
-  import Icon from "fa-svelte";
-  import { faHome } from "@fortawesome/free-solid-svg-icons/faHome";
-  let icon = faHome;
+  import Home from "svelte-material-icons/Home.svelte";
+  import Briefcase from "svelte-material-icons/Briefcase.svelte";
+  import Git from "svelte-material-icons/Git.svelte";
+  import Post from "svelte-material-icons/Post.svelte";
+  import Email from "svelte-material-icons/Email.svelte";
+  import CodeBraces from "svelte-material-icons/CodeBraces.svelte";
+
   let someText = `SisifoDev`;
+
+  export let size = "1em";
+  export let width = size;
+  export let height = size;
+  export let color = "currentColor";
+  export let viewBox = "0 0 24 24";
 </script>
 
 <style>
@@ -50,25 +60,43 @@
 
 <div class="Navbar">
   <div class="logo-menu">
-    <h3>{someText}</h3>
+    <h3>
+      <CodeBraces {color} {size} {width} {height} {viewBox} />
+      {someText}
+    </h3>
   </div>
   <div class="nav">
     <ul>
       <li>
 
         <a href="#header">
-          <Icon class="" icon={faHome} />
+          <Home {color} {size} {width} {height} {viewBox} />
           Home
         </a>
       </li>
       <li>
-        <a href="#services">Servicios</a>
+        <a href="#services">
+          <Briefcase {color} {size} {width} {height} {viewBox} />
+          Servicios
+        </a>
       </li>
       <li>
-        <a href="">Portafolio</a>
+        <a href="">
+          <Git {color} {size} {width} {height} {viewBox} />
+          Proyectos
+        </a>
       </li>
       <li>
-        <a href="#footer">Contactos</a>
+        <a href="">
+          <Post {color} {size} {width} {height} {viewBox} />
+          Blog
+        </a>
+      </li>
+      <li>
+        <a href="#footer">
+          <Email {color} {size} {width} {height} {viewBox} />
+          Contactos
+        </a>
       </li>
     </ul>
   </div>

@@ -25,6 +25,7 @@
     --intense-purple: #e14eca;
     --light-purple: #40235c;
     --intense-pink: #fd5d93;
+    --title-section: 2.4em;
   }
 
   :global(body) {
@@ -41,14 +42,10 @@
     grid-template-areas:
       "nav nav nav"
       "header header header"
-      "section section section"
+      "services services services"
+      "portfolio portfolio portfolio"
+      "contacts contacts contacs"
       "footer footer footer";
-  }
-
-  section {
-    height: 600px;
-
-    grid-area: section;
   }
 
   @media (min-width: 640px) {
@@ -62,11 +59,11 @@
 
   <Navbar />
   <Header />
-  <section id="services">
-    <Services />
-    <Portfolio />
-    <Contacts />
-  </section>
+
+  <Services />
+  <Portfolio />
+  <Contacts />
+
   <Footer />
 
 </main>
