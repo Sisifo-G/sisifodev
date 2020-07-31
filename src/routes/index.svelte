@@ -38,6 +38,7 @@
 
   :global(html) {
     scroll-behavior: smooth;
+    /* height: 100%; */
   }
 
   :global(body) {

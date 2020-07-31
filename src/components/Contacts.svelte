@@ -4,7 +4,9 @@
 
 <style>
   .Contacts {
-    height: 600px;
+    height: 100vh;
+    width: 100vw;
+
     grid-area: contacts;
   }
 </style>

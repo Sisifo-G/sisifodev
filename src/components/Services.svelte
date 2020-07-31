@@ -17,7 +17,8 @@
   }
   .Services {
     padding: 50px 90px 0 90px;
-    height: 600px;
+    height: 100vh;
+    width: 100vw;
     grid-area: services;
   }
   .Services h2 {
@@ -87,10 +88,10 @@
 
 <div class="Services" id="services">
   <h2>Planes y servicios</h2>
-  <p>
+  <!-- <p>
     Elige el plan que mas se acomode a tus necesidades y ponte en contacto con
     nosotros
-  </p>
+  </p> -->
   <div class="container-planes">
     <div class="card card-basico">
       <div class="card-header">

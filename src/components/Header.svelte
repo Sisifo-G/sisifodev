@@ -2,8 +2,7 @@
   import BtnContactos from "./BtnContactos.svelte";
 
   let sisifoLogo = "https://i.ibb.co/VpxxSdK/sisifo-Logo.png";
-  let rutaLogo =
-    "https://www.htmlden.com/wp-content/themes/ks/img/web-developer-master-tn.svg";
+
   let imgFondo = "https://i.ibb.co/xCy1S18/path1.png";
 
   // export let nombre;
@@ -12,7 +11,9 @@
 
 <style>
   .Header {
-    height: 600px;
+    height: 100vh;
+    width: 100vw;
+    margin-top: 70px;
     grid-area: header;
   }
 
@@ -34,6 +35,8 @@
   .text-container p {
     /* align-self: center; */
     /* justify-self: center; */
+    margin-top: 2em;
+    margin-bottom: 2em;
     font-size: 1.5em;
     max-width: 600px;
   }

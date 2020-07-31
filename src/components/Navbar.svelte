@@ -21,10 +21,13 @@
   .Navbar {
     background: var(--medium-blue);
     height: 3.5em;
+    width: 100vw;
     display: flex;
     align-items: center;
     justify-content: space-around;
     grid-area: nav;
+    position: fixed;
+    z-index: 100;
   }
   .logo-menu {
     padding: 0 20px;
