@@ -68,6 +68,14 @@
 
     /* color: var(--white-color); */
   }
+
+  .badge {
+    font-size: 0.8em;
+    color: var(--white-color);
+    background: var(--intense-pink);
+    padding: 2px;
+    border-radius: 3px;
+  }
 </style>
 
 <div class="Navbar">
@@ -99,16 +107,20 @@
           Proyectos
         </a>
       </li>
+
+      <li>
+        <a href="#contacts">
+          <!-- <Email {color} {size} {width} {height} {viewBox} /> -->
+          Contactos
+        </a>
+      </li>
       <li>
         <a href="#blog">
           <!-- <Post {color} {size} {width} {height} {viewBox} /> -->
           Blog
-        </a>
-      </li>
-      <li>
-        <a href="#contactos">
-          <!-- <Email {color} {size} {width} {height} {viewBox} /> -->
-          Contactos
+          <sup>
+            <span class="badge">Próximamente</span>
+          </sup>
         </a>
       </li>
     </ul>

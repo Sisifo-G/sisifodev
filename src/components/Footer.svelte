@@ -101,6 +101,16 @@
   }
   .dato-contacto {
     margin-left: 5px;
+
+    border-radius: 3px;
+  }
+
+  .badge {
+    font-size: 0.8em;
+    color: var(--white-color);
+    background: var(--intense-pink);
+    padding: 2px;
+    border-radius: 3px;
   }
 </style>
 
@@ -116,11 +126,17 @@
       <li>
         <a href="#proyectos">Proyectos</a>
       </li>
+
       <li>
-        <a href="#blog">Blog</a>
+        <a href="#contacts">Contactos</a>
       </li>
       <li>
-        <a href="#contactos">Contactos</a>
+        <a href="#blog">
+          Blog
+          <sup>
+            <span class="badge">Próximamente</span>
+          </sup>
+        </a>
       </li>
     </ul>
   </div>

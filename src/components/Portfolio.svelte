@@ -8,6 +8,7 @@
 <style>
   .Portfolio {
     padding: 50px 90px 0 90px;
+
     height: 100vh;
     /* width: 100vw; */
     grid-area: portfolio;
@@ -20,21 +21,48 @@
 
   .proyectos-container {
     display: grid;
+    width: 100%;
+    /* text-align: center; */
+    margin: 90px auto;
     grid-template-areas:
       "proyecto1 proyecto2"
       "proyecto3 proyecto4";
     grid-gap: 20px;
   }
   .proyecto1 {
+    background: var(--light-blue);
+    -webkit-box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
+    -moz-box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
+    box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
+
+    border-radius: 5px;
     grid-area: proyecto1;
   }
   .proyecto2 {
+    background: var(--light-blue);
+    -webkit-box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
+    -moz-box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
+    box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
+
+    border-radius: 5px;
     grid-area: proyecto2;
   }
   .proyecto3 {
+    background: var(--light-blue);
+    -webkit-box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
+    -moz-box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
+    box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
+
+    border-radius: 5px;
     grid-area: proyecto3;
   }
   .proyecto4 {
+    background: var(--light-blue);
+    -webkit-box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
+    -moz-box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
+    box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
+
+    border-radius: 5px;
     grid-area: proyecto4;
   }
   .img-proyectos {
@@ -59,6 +87,10 @@
 
 <div class="Portfolio" id="proyectos">
   <h2>Proyectos Realizados</h2>
+  <!-- <p>
+    Elige el plan que mas se acomode a tus necesidades y ponte en contacto con
+    nosotros
+  </p> -->
   <div class="proyectos-container">
     <div class="proyecto1">
       <div class="img-proyectos">

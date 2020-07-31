@@ -9,12 +9,12 @@
   import BtnContactos from "../components/BtnContactos.svelte";
 
   let src = "../assets/img/sisifoLogo.png";
-  let data = {};
-  const API = "http://localhost:1337/imagenes";
-  onMount(async () => {
-    const response = await fetch(API);
-    data = await response.json();
-  });
+  // let data = {};
+  // const API = "http://localhost:1337/imagenes";
+  // onMount(async () => {
+  //   const response = await fetch(API);
+  //   data = await response.json();
+  // });
 </script>
 
 <style>
@@ -51,7 +51,8 @@
 
   main {
     display: grid;
-    width: 100%;
+
+    /* width: 100%; */
     /* text-align: center; */
     margin: 0 auto;
     grid-template-areas:
@@ -59,7 +60,7 @@
       "header header header"
       "services services services"
       "portfolio portfolio portfolio"
-      "contacts contacts contacs"
+      "contacts contacts contacts"
       "footer footer footer";
   }
 

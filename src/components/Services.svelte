@@ -38,6 +38,9 @@
 
   .card {
     background: var(--light-blue);
+    -webkit-box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
+    -moz-box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
+    box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
 
     border-radius: 5px;
     /* margin: 0 5px; */
@@ -57,7 +60,8 @@
     margin: 0;
   }
   .card-body {
-    padding: 20px;
+    padding: 0 20px;
+    height: 160px;
   }
   .card-footer {
     background: var(--medium-blue);
