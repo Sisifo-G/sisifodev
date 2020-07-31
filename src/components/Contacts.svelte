@@ -9,6 +9,6 @@
   }
 </style>
 
-<id class="Contacts">
+<div class="Contacts" id="contactos">
   <h2>Contactos</h2>
-</id>
+</div>

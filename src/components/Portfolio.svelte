@@ -6,6 +6,6 @@
 
 </style>
 
-<div class="portfolio">
+<div class="portfolio" id="proyectos">
   <h2>Proyectos Realizados</h2>
 </div>

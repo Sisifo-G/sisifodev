@@ -1,20 +1,19 @@
 <script>
   import { onMount } from "svelte";
-  import Navbar from "./components/Navbar.svelte";
-  import Services from "./components/Services.svelte";
-  import Portfolio from "./components/Portfolio.svelte";
-  import Contacts from "./components/Contacts.svelte";
-  import Footer from "./components/Footer.svelte";
-  import Header from "./components/Header.svelte";
-  import BtnContactos from "./components/BtnContactos.svelte";
+  import Navbar from "../components/Navbar.svelte";
+  import Services from "../components/Services.svelte";
+  import Portfolio from "../components/Portfolio.svelte";
+  import Contacts from "../components/Contacts.svelte";
+  import Footer from "../components/Footer.svelte";
+  import Header from "../components/Header.svelte";
+  import BtnContactos from "../components/BtnContactos.svelte";
 
-  let src = "./assets/img/sisifoLogo.png";
+  let src = "../assets/img/sisifoLogo.png";
   let data = {};
   const API = "http://localhost:1337/imagenes";
   onMount(async () => {
     const response = await fetch(API);
     data = await response.json();
-    console.log(data);
   });
 </script>
 
@@ -37,12 +36,18 @@
     --title-section: 2.4em;
   }
 
+  :global(html) {
+    scroll-behavior: smooth;
+  }
+
   :global(body) {
+    font-family: "Mulish", sans-serif;
     margin: 0;
     padding: 0;
     background-color: var(--dark-blue);
     color: var(--light-gray);
   }
+
   main {
     display: grid;
     width: 100%;
@@ -67,7 +72,7 @@
 <main>
 
   <Navbar />
-  <Header {...data.nombre} />
+  <Header />
 
   <Services />
   <Portfolio />

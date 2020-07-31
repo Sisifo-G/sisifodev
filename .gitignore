@@ -2,3 +2,11 @@
 /public/build/
 
 .DS_Store
+
+# Temporary folders
+tmp/
+temp/
+
+#sapper
+src/node_modules
+__sapper__

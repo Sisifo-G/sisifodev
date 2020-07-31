@@ -85,7 +85,7 @@
   }
 </style>
 
-<div class="Services">
+<div class="Services" id="services">
   <h2>Planes y servicios</h2>
   <p>
     Elige el plan que mas se acomode a tus necesidades y ponte en contacto con

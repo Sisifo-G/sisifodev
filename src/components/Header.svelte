@@ -76,7 +76,7 @@
   }
 </style>
 
-<div class="Header">
+<div class="Header" id="header">
   <div class="header-container">
     <div class="text-container">
       <div class="text">

@@ -45,6 +45,15 @@
     color: var(--light-gray);
     text-decoration: none;
   }
+
+  /* .icono-menu {
+    margin: 0;
+    padding: 0;
+  }
+  .texto-menu {
+    margin: 0 5px 0 0;
+    padding: 0;
+  } */
   .nav a:hover {
     color: var(--white-color);
     text-decoration: none;
@@ -70,31 +79,32 @@
       <li>
 
         <a href="#header">
-          <Home {color} {size} {width} {height} {viewBox} />
+          <!-- <Home {color} {size} {width} {height} {viewBox} /> -->
           Home
         </a>
       </li>
       <li>
         <a href="#services">
-          <Briefcase {color} {size} {width} {height} {viewBox} />
+
+          <!-- <Briefcase {color} {size} {width} {height} {viewBox} /> -->
           Servicios
         </a>
       </li>
       <li>
-        <a href="">
-          <Git {color} {size} {width} {height} {viewBox} />
+        <a href="#proyectos">
+          <!-- <Git {color} {size} {width} {height} {viewBox} /> -->
           Proyectos
         </a>
       </li>
       <li>
-        <a href="">
-          <Post {color} {size} {width} {height} {viewBox} />
+        <a href="#blog">
+          <!-- <Post {color} {size} {width} {height} {viewBox} /> -->
           Blog
         </a>
       </li>
       <li>
-        <a href="#footer">
-          <Email {color} {size} {width} {height} {viewBox} />
+        <a href="#contactos">
+          <!-- <Email {color} {size} {width} {height} {viewBox} /> -->
           Contactos
         </a>
       </li>

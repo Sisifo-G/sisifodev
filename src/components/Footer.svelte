@@ -111,16 +111,16 @@
         <a href="#header">Inicio</a>
       </li>
       <li>
-        <a href="#services">Servicios</a>
+        <a href="#servicios">Services</a>
       </li>
       <li>
-        <a href="">Proyectos</a>
+        <a href="#proyectos">Proyectos</a>
       </li>
       <li>
-        <a href="">Blog</a>
+        <a href="#blog">Blog</a>
       </li>
       <li>
-        <a href="#footer">Contactos</a>
+        <a href="#contactos">Contactos</a>
       </li>
     </ul>
   </div>
