@@ -12,7 +12,7 @@
 <style>
   .Header {
     height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
     margin-top: 70px;
     grid-area: header;
   }

@@ -5,7 +5,7 @@
 <style>
   .Contacts {
     height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
 
     grid-area: contacts;
   }

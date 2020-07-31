@@ -1,12 +1,15 @@
 <script>
-
+  let calmedRuta = "https://i.ibb.co/GPDDT3Y/calmed.jpg";
+  let maestroRuta = "https://i.ibb.co/cxYPXS8/Maestro-Heracles.jpg";
+  let marinaRuta = "https://i.ibb.co/YWxMxG9/marina-stereo.jpg";
+  let temploRuta = "https://i.ibb.co/BGb7ZfC/Real-Templo-Sagrado.jpg";
 </script>
 
 <style>
   .Portfolio {
     padding: 50px 90px 0 90px;
     height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
     grid-area: portfolio;
   }
   h2 {
@@ -17,7 +20,10 @@
 
   .proyectos-container {
     display: grid;
-    grid-template-areas: "proyecto1 proyecto2 proyecto3 proyecto4";
+    grid-template-areas:
+      "proyecto1 proyecto2"
+      "proyecto3 proyecto4";
+    grid-gap: 20px;
   }
   .proyecto1 {
     grid-area: proyecto1;
@@ -31,14 +37,48 @@
   .proyecto4 {
     grid-area: proyecto4;
   }
+  .img-proyectos {
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  .img-proyectos:hover img {
+    border-radius: 5px;
+    -webkit-transform: scale(1.3);
+    transform: scale(1.3);
+    filter: blur(1px);
+
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+  }
+  .img-proyectos img {
+    /* border: 1px solid var(--light-gray); */
+    border-radius: 5px;
+    width: 100%;
+  }
 </style>
 
 <div class="Portfolio" id="proyectos">
   <h2>Proyectos Realizados</h2>
   <div class="proyectos-container">
-    <div class="proyecto1">primer</div>
-    <div class="proyecto2">seg</div>
-    <div class="proyecto3">ter</div>
-    <div class="proyecto4">cuart</div>
+    <div class="proyecto1">
+      <div class="img-proyectos">
+        <img src={temploRuta} class="opacity" alt="fondo" />
+      </div>
+    </div>
+    <div class="proyecto2">
+      <div class="img-proyectos">
+        <img src={marinaRuta} class="opacity" alt="fondo" />
+      </div>
+    </div>
+    <div class="proyecto3">
+      <div class="img-proyectos">
+        <img src={maestroRuta} class="opacity" alt="fondo" />
+      </div>
+    </div>
+    <div class="proyecto4">
+      <div class="img-proyectos">
+        <img src={calmedRuta} class="opacity" alt="fondo" />
+      </div>
+    </div>
   </div>
 </div>

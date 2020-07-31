@@ -18,7 +18,7 @@
   .Services {
     padding: 50px 90px 0 90px;
     height: 100vh;
-    width: 100vw;
+    /* width: 100vw; */
     grid-area: services;
   }
   .Services h2 {
