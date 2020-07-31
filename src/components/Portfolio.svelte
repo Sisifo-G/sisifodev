@@ -8,7 +8,7 @@
 <style>
   .Portfolio {
     padding: 50px 90px 0 90px;
-
+    margin-bottom: 150px;
     height: 100vh;
     /* width: 100vw; */
     grid-area: portfolio;

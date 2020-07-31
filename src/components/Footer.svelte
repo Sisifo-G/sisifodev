@@ -5,6 +5,7 @@
   import Facebook from "svelte-material-icons/Facebook.svelte";
   import Twitter from "svelte-material-icons/Twitter.svelte";
   import Instagram from "svelte-material-icons/Instagram.svelte";
+  import Youtube from "svelte-material-icons/Youtube.svelte";
   import Git from "svelte-material-icons/Git.svelte";
 
   export let size = "1em";
@@ -12,6 +13,9 @@
   export let height = size;
   export let color = "currentColor";
   export let viewBox = "0 0 24 24";
+  export let size2 = "2em";
+  export let width2 = size2;
+  export let height2 = size2;
 </script>
 
 <style>
@@ -169,10 +173,11 @@
   </div>
   <div class="redes">
     <h3>Sigunos en:</h3>
-    <Facebook {color} {size} {width} {height} {viewBox} />
-    <Twitter {color} {size} {width} {height} {viewBox} />
-    <Instagram {color} {size} {width} {height} {viewBox} />
-    <Git {color} {size} {width} {height} {viewBox} />
+    <Facebook {color} {size2} {width2} {height2} {viewBox} />
+    <Twitter {color} {size2} {width2} {height2} {viewBox} />
+    <Instagram {color} {size2} {width2} {height2} {viewBox} />
+    <Youtube {color} {size2} {width2} {height2} {viewBox} />
+    <Git {color} {size2} {width2} {height2} {viewBox} />
   </div>
   <div class="copy">
     <p>

@@ -20,6 +20,8 @@
     height: 100vh;
     /* width: 100vw; */
     grid-area: services;
+    background: url(https://i.ibb.co/9wT34mY/deep-water.jpg) no-repeat;
+    background-size: cover;
   }
   .Services h2 {
     text-align: center;

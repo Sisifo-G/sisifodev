@@ -23,6 +23,8 @@
   }
 
   p.info:hover {
+    color: var(--dark-blue);
+    background: var(--white-color);
     cursor: pointer;
   }
 </style>
