@@ -5,42 +5,42 @@ import './Profiles.css';
 import json from '../../resources/json/portafolio.json';
 
 // img.svg
-import imgPort from '../../resources/img/seccionIcons/nature.svg';
+import imgLogo from '../../resources/img/seccionIcons/nature.svg';
+import imgPortada from '../../resources/img/developer-02.svg';
 
 
 const Profiles = () => {
     const profile = json.developers;
     return (
         <div className="profiles">
-            <h4>Profiles</h4>
+            <h4>Desarrolladores</h4>
             <div className="contentProfiles row justify-content-around mr-0 ml-0">
                 {profile.map(profile => (
                     <div key={profile.id} className="col-md-5 col-sm-12 col-12">
-                        <div className="imgContentProf">
+                        <div className="cardProfile">
                             <div className="imgProfile">
-                                <img src={imgPort} alt=""/>
-                            </div>
-                            <div className="card pl-0 pr-0">
-                                <div className="card-header d-flex justify-content-between align-items-center">
-                                    <h5 className="m-0">
-                                        {profile.name}
-                                    </h5>
-                                    <button
-                                        className="btn btn-outline-info">
-                                        edad: {profile.years === '' ? '?' : profile.years}
-                                    </button>
+                                <div className="imgPortada">
+                                    <img src={imgPortada} alt=""/>
                                 </div>
-                                <div className="card-body">
-                                    <ul>
-                                        <li>
-                                            Lenguaje preferencial: {profile.devOps}
-                                        </li>
-                                        {profile.socialWeb.map((social, i) => (
-                                            <li key={i}>
-                                                gitHub: {social.github}
-                                            </li>
-                                        ))}
-                                    </ul>
+                                <div className="contentImgLogo">
+                                    <img className="imgLogo" src={imgLogo} alt=""/>
+                                </div>
+                            </div>
+                            <div className="contentInfoProfile">
+                                <div className="textContentProf">
+                                    <div className="textTitleProfile">
+                                        <h5>{profile.name}</h5>
+                                        <span>Preferencia: <code>{profile.devOps}</code></span>
+                                    </div>
+                                    <div className="textUrl">
+                                        <ul>
+                                            {profile.socialWeb.map((socialWebs, index) => (
+                                                <li key={index}>
+                                                    github: {socialWebs.github}
+                                                </li>
+                                            ))}
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
                         </div>

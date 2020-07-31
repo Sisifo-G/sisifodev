@@ -1,24 +1,103 @@
+/* colors: #3F3D56 => darkTheme || #19BC9C => text */
+
 .profiles {
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 60px;
+    color: #fff;
 }
 
-.profiles h4 {
-    color: #fff;
+.contentProfiles {
+    padding-top: 20px;
+}
+
+.cardProfile {
+    background-color: #202331;
+    border-radius: 5px;
+    -webkit-box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.75);
+    box-shadow: 10px 10px 35px 0px rgba(0, 0, 0, 0.75);
 }
 
 /* imgContentProf  */
 
-.imgProfile {
-    display: flex;
-    justify-content: center;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.imgPortada {
+    width: 100%;
 }
 
-.imgProfile img {
+.imgPortada img {
+    width: 100%;
+}
+
+.contentImgLogo {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.contentImgLogo .imgLogo {
+    position: absolute;
     width: 150px;
-    background-color: #fff;
     border-radius: 100%;
-    border-color: transparent;
+    top: 40px;
+}
+
+.contentInfoProfile {
+    padding: 20px;
+}
+
+/* contentText */
+
+.textContentProf ul {
+    margin: 0;
+    padding: 0;
+}
+
+.textContentProf ul li {
+    list-style: none;
+}
+
+.textTitleProfile {
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.textTitleProfile h5 {
+    margin-bottom: 0.2rem;
+}
+
+/* responsitive Designe */
+
+@media screen and (max-width: 1400px) {}
+
+@media screen and (max-width: 1024px) {
+    .contentImgLogo .imgLogo {
+        width: 120px;
+        top: 65px;
+    }
+
+    .textTitleProfile {
+        padding-top: 35px;
+        padding-bottom: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+
+    .textContentProf ul li {
+        word-break: break-all;
+
+        word-break: break-word;
+        -webkit-hyphens: auto;
+        -moz-hyphens: auto;
+        -ms-hyphens: auto;
+        hyphens: auto;
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .cardProfile {
+        margin-bottom: 20px;
+    }
 }
