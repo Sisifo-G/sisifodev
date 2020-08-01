@@ -31,7 +31,7 @@
   .Footer {
     background: var(--medium-blue);
     /* height: 100px; */
-    padding: 20px 160px;
+    padding: 20px 50px;
     /* display: block; */
     /* align-items: center; */
     /* justify-content: space-around; */
@@ -116,6 +116,66 @@
     padding: 2px;
     border-radius: 3px;
   }
+  @media screen and (max-width: 1024px) {
+  }
+
+  @media screen and (max-width: 768px) {
+    /* acá van las reglas CSS que aplican para este media query */
+  }
+  @media screen and (max-width: 480px) {
+    .Footer {
+      /* grid-area: footer;
+      display: grid;
+      grid-template-areas:
+        "datos-contacto datos-contacto"
+        "redes redes"
+        "copy-area copy-area";
+      grid-gap: 20px;
+      align-items: center;
+      align-self: center;
+      justify-self: center; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .footer-nav {
+      /* justify-self: center;
+    align-self: center; */
+      display: none;
+      justify-self: center;
+    }
+    .datos-contacto {
+      /* text-align: center; */
+      /* margin-bottom: 20px; */
+      /* text-align: center; */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      align-self: center;
+      text-align: center;
+    }
+    .redes {
+      /* margin-bottom: 20px; */
+      align-self: center;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    .copy {
+      margin-bottom: 20px;
+      text-align: center;
+    }
+    h3 {
+      font-size: 0.9em;
+    }
+    p {
+      font-size: 0.8em;
+    }
+  }
+  @media screen and (max-width: 320px) {
+  }
 </style>
 
 <div class="Footer">
@@ -172,7 +232,7 @@
     </div>
   </div>
   <div class="redes">
-    <h3>Sigunos en:</h3>
+    <h3>Siguenos en:</h3>
     <Facebook {color} {size2} {width2} {height2} {viewBox} />
     <Twitter {color} {size2} {width2} {height2} {viewBox} />
     <Instagram {color} {size2} {width2} {height2} {viewBox} />

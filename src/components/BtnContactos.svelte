@@ -27,6 +27,14 @@
     background: var(--white-color);
     cursor: pointer;
   }
+
+  @media screen and (max-width: 480px) {
+    .BtnContactos {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  }
 </style>
 
 <div class="BtnContactos">

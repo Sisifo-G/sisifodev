@@ -76,6 +76,26 @@
     padding: 2px;
     border-radius: 3px;
   }
+
+  @media screen and (max-width: 480px) {
+    .Navbar {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      height: 300px;
+    }
+    .nav {
+      display: flex;
+      flex-direction: column;
+    }
+    .nav ul {
+      display: flex;
+      flex-direction: column;
+    }
+    .nav ul li {
+      padding: 10px 0;
+    }
+  }
 </style>
 
 <div class="Navbar">

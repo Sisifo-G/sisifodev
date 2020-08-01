@@ -30,7 +30,6 @@
     grid-gap: 20px;
   }
   .proyecto1 {
-    background: var(--light-blue);
     -webkit-box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
     -moz-box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
     box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
@@ -39,7 +38,6 @@
     grid-area: proyecto1;
   }
   .proyecto2 {
-    background: var(--light-blue);
     -webkit-box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
     -moz-box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
     box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
@@ -48,7 +46,6 @@
     grid-area: proyecto2;
   }
   .proyecto3 {
-    background: var(--light-blue);
     -webkit-box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
     -moz-box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
     box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
@@ -57,7 +54,6 @@
     grid-area: proyecto3;
   }
   .proyecto4 {
-    background: var(--light-blue);
     -webkit-box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
     -moz-box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
     box-shadow: 10px 10px 35px 0px rgba(5, 5, 12, 0.75);
@@ -69,6 +65,12 @@
     border-radius: 5px;
     overflow: hidden;
   }
+  .img-proyectos img {
+    /* border: 1px solid var(--light-gray); */
+    object-fit: cover;
+    border-radius: 5px;
+    width: 100%;
+  }
   .img-proyectos:hover img {
     border-radius: 5px;
     -webkit-transform: scale(1.3);
@@ -78,10 +80,61 @@
     transition: all 0.5s ease-in-out;
     cursor: pointer;
   }
-  .img-proyectos img {
-    /* border: 1px solid var(--light-gray); */
-    border-radius: 5px;
-    width: 100%;
+
+  @media screen and (max-width: 1024px) {
+    .Portfolio {
+      padding: 50px 0;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    /* acá van las reglas CSS que aplican para este media query */
+    .proyectos-container {
+      display: grid;
+      width: 100%;
+      /* text-align: center; */
+      margin: 90px auto;
+      grid-template-areas:
+        "proyecto1 proyecto1"
+        "proyecto2 proyecto2"
+        "proyecto3 proyecto3"
+        "Proyecto4 proyecto4";
+      grid-gap: 20px;
+    }
+    .img-proyectos img {
+      /* border: 1px solid var(--light-gray); */
+      object-fit: cover;
+      border-radius: 5px;
+      height: 100%;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .Portfolio {
+      /* padding: 50px 90px 0 90px; */
+      margin-bottom: 0;
+      margin-top: 40px;
+      padding: 0px;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .proyectos-container {
+      padding: 0;
+      margin-top: 30px;
+      width: 85%;
+    }
+    .proyecto4 {
+      /* display: none; */
+    }
+
+    h2 {
+      font-size: 1.7em;
+    }
+  }
+  @media screen and (max-width: 320px) {
   }
 </style>
 

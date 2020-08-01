@@ -64,11 +64,11 @@
       "footer footer footer";
   }
 
-  @media (min-width: 640px) {
+  /* @media (min-width: 640px) {
     main {
       max-width: none;
     }
-  }
+  } */
 </style>
 
 <main>

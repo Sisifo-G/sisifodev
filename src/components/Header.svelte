@@ -54,7 +54,7 @@
   }
 
   .img-fondo img {
-    width: 500px;
+    max-width: 500px;
     position: relative;
     z-index: -1;
   }
@@ -77,11 +77,92 @@
     align-self: center;
     justify-self: center;
   }
+  @media screen and (max-width: 1024px) {
+    .header-container {
+      padding: 50px 0px 0 0px;
+    }
+
+    .text-container {
+      grid-area: text;
+      display: flex;
+      /* justify-content: center; */
+      /* align-items: center; */
+      /* padding-right: 20px; */
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    /* acá van las reglas CSS que aplican para este media query */
+    .text-container p {
+      /* align-self: center; */
+      /* justify-self: center; */
+      margin-top: 2em;
+      margin-bottom: 2em;
+      font-size: 1.3em;
+      max-width: 400px;
+    }
+
+    .text-container h2 {
+      /* align-self: center; */
+      /* justify-self: center; */
+      color: var(--intense-green);
+      font-size: 2.5em;
+      margin: 0;
+    }
+    .img-container {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .Header {
+      height: 100vh;
+      /* width: 100vw; */
+      margin-top: 40px;
+
+      text-align: center;
+      align-content: center;
+    }
+    .header-container {
+      justify-content: center;
+    }
+    .img-fondo img {
+      text-align: center;
+      width: 300px;
+      position: relative;
+      z-index: -1;
+    }
+    .text {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .text-container p {
+      text-align: center;
+      font-size: 1.3em;
+      max-width: 100%;
+    }
+    .img-fondo img {
+      margin-top: 90px;
+      max-width: 500px;
+      position: relative;
+      z-index: -1;
+    }
+    .contenedorText {
+      width: 100%;
+      justify-content: center;
+    }
+    .text-container {
+      padding: 0;
+    }
+  }
+  @media screen and (max-width: 320px) {
+  }
 </style>
 
 <div class="Header" id="header">
   <div class="header-container">
-    <div class="text-container">
+    <div class="text-container contenedorText">
       <div class="text">
         <h2>SisifoDev</h2>
         <p>

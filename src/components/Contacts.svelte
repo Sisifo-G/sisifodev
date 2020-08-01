@@ -46,6 +46,41 @@
   .form {
     grid-area: form;
   }
+  @media screen and (max-width: 1024px) {
+  }
+
+  @media screen and (max-width: 768px) {
+    /* acá van las reglas CSS que aplican para este media query */
+    .container-contactos {
+      display: grid;
+      width: 100%;
+      /* text-align: center; */
+      margin: 90px auto;
+      grid-template-areas:
+        "labels "
+        "form";
+      grid-gap: 20px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .Contacts h2 {
+      font-size: 1.7em;
+    }
+    .Contacts {
+      /* margin-top: 40px; */
+      padding: 0;
+      height: 100%;
+      width: 100%;
+      /* background-size: auto; */
+
+      /* padding-bottom: 100px; */
+    }
+    .container-contactos {
+      padding: 0;
+    }
+  }
+  @media screen and (max-width: 320px) {
+  }
 </style>
 
 <div class="Contacts" id="contacts">

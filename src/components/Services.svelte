@@ -68,7 +68,7 @@
   .card-footer {
     background: var(--medium-blue);
     width: 100%;
-    height: 90px;
+    max-height: 90px;
     margin-bottom: 0;
     display: flex;
     justify-content: center;
@@ -89,6 +89,69 @@
 
   .card-tiendas {
     grid-area: card-tiendas;
+  }
+  @media screen and (max-width: 1024px) {
+    .Services {
+      padding: 0px 90px 0 90px;
+    }
+
+    .container-planes {
+      margin: 20px auto;
+    }
+  }
+
+  @media screen and (max-width: 768px) {
+    /* acá van las reglas CSS que aplican para este media query */
+    .container-planes {
+      display: grid;
+      max-width: 100%;
+      /* text-align: center; */
+      margin: 90px auto;
+      grid-template-areas:
+        "card-basico card-estandar"
+        "card-premium card-tiendas";
+      grid-gap: 20px;
+    }
+  }
+  @media screen and (max-width: 480px) {
+    .Services {
+      padding: 50px 30px 0 30px;
+      height: 100%;
+    }
+    .Services h2 {
+      text-align: center;
+      font-size: 1.7em;
+      color: var(--intense-green);
+    }
+    .container-planes {
+      display: grid;
+      max-width: 100%;
+      /* text-align: center; */
+      margin: auto;
+      grid-template-areas:
+        "card-basico"
+        "card-estandar"
+        "card-premium"
+        "card-tiendas";
+      grid-gap: 20px;
+    }
+
+    .card-header h3 {
+      margin: 0;
+    }
+    .card-body {
+      /* text-align: justify; */
+      padding: 0 20px;
+      height: 160px;
+      width: 85%;
+    }
+    .card-body p {
+      /* margin: 0; */
+      max-height: 100%;
+      max-width: 100%;
+    }
+  }
+  @media screen and (max-width: 320px) {
   }
 </style>
 
