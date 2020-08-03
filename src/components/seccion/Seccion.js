@@ -5,6 +5,9 @@ import './Seccion.css';
 import Portafolio from '../portafolio/Portafolio';
 import Profiles from '../profiles/Profiles';
 
+// components Prueba
+import LifeCycle from '../pruebaComponent/LifeCycle';
+
 
 class Seccion extends React.Component {
     render() {
@@ -12,6 +15,7 @@ class Seccion extends React.Component {
             <div className="contentSeccion">
                 <div className="contentPortafolio container">
                     <h4>Seccion</h4>
+                    <LifeCycle />
                     <Portafolio />
                 </div>
                 <div className="contentSecProfiles">

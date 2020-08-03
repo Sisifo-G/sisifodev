@@ -1,5 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Recursive:wght@400;500&display=swap');
 
+:root {
+    --white: #fff;
+    --background-color: #242838;
+}
+
+
 /* 
     para el root
     color svg: #425B83
@@ -55,7 +61,7 @@ h1, h2, h3, h4, h5, a, button, a, .fontTitle {
 } */
 
 body {
-    background-color: #242838;
+    background-color: var(--background-color);
 }
 
 .titleLogo {

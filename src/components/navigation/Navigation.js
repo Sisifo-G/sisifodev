@@ -24,6 +24,9 @@ class Navigation extends React.Component {
 
         this.refNavbar = React.createRef();
         this.refButtonNav = React.createRef();
+
+        // Este enlace es necesario para hacer que `this` funcione en el callback
+        this.handleButtonLogo = this.handleButtonLogo.bind(this);
     }
 
     // handler to test '<a href={}></a>'
@@ -54,13 +57,13 @@ class Navigation extends React.Component {
     render() {
         return (
             <>
-                <div className="navbarComponent container d-flex justify-content-between border p-2">
+                <div className="navbarComponent container d-flex justify-content-between p-2">
                     <div className="titleLogo">
                         <img src={logo} alt="" />
                         <a
-                            href="#header"
+                            href="#Header"
                             onClick={this.handleButtonLogo}>
-                            <span className="fontTitle">SisifoDev</span>
+                            <span className="fontTitle">{this.props.nameWebSite}</span>
                         </a>
                     </div>
                     <nav className="navegation">

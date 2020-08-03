@@ -11,12 +11,13 @@ import Footer from './components/footer/Footer';
 // import TypeEffect from './components/typingEffect/TypingEffect';
 
 const App = () => {
+  const nameWeb = 'sisifoDev';
   return (
     <div className="App">
       <Header titleHeader="Sisifo" />
-      <Navegation />
+      <Navegation nameWebSite={nameWeb} />
       <Seccion />
-      <Footer />
+      <Footer nameWebSite={nameWeb} />
     </div>
   );
 }

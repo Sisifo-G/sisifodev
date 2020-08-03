@@ -1,8 +1,9 @@
 .navbarComponent {
     position: relative;
-    background-color: #fff;
+    background-color: #0d1322;
     margin-top: -40px;
     border-radius: 40px;
+    border-color: transparent;
 }
 
 .titleLogo {
@@ -23,6 +24,7 @@
 
 .ButtonIcon {
     display: none;
+    color: #fff;
 }
 
 .itemNavb {
@@ -37,6 +39,7 @@
 .navegation li button, .ButtonIcon {
     padding: 10px 15px;
     margin: 0 5px;
+    color: #fff;
     transition: all 500ms ease;
     -o-transition: all 500ms ease;
     -moz-transition: all 500ms ease;
@@ -44,7 +47,7 @@
 }
 
 .navegation li button:hover, .ButtonIcon:hover {
-    background-color: #2C3E50;
+    background-color: #1b283f;
     border-radius: 40px;
     color: #fff;
     transition: all 500ms ease;
